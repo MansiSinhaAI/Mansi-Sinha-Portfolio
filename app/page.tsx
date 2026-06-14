@@ -442,10 +442,10 @@ function Projects() {
                 ))}
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href={project.github} className="focus-ring inline-flex items-center gap-2 rounded-full border border-lavender-200 bg-white px-4 py-2 text-sm font-semibold text-ink-700 transition hover:border-lavender-300">
+                <a href={project.github} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 rounded-full border border-lavender-200 bg-white px-4 py-2 text-sm font-semibold text-ink-700 transition hover:border-lavender-300">
                   <Github size={16} /> GitHub
                 </a>
-                <a href={project.demo} className="focus-ring inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-ink-700">
+                <a href={project.demo} target="_blank" rel="noreferrer" className="focus-ring inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-ink-700">
                   Live Demo <ArrowUpRight size={16} />
                 </a>
               </div>

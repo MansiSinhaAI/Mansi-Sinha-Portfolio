@@ -107,8 +107,8 @@ export const projects = [
     approach: "Building OCR and NLP pipelines to extract biomarkers from lab reports, convert PDFs/images into structured health data, and power conversational health assistance through FastAPI services.",
     impact: "Creates a secure end-to-end AI workflow for report storage, historical health tracking, personalized insight generation, and user-friendly health interpretation.",
     stack: ["Python", "FastAPI", "OCR", "NLP", "PostgreSQL", "OpenAI API", "Git", "Next.js"],
-    github: "#contact",
-    demo: "#contact"
+    github: "https://sheapp.in/",
+    demo: "https://sheapp.in/"
   },
   {
     title: "Real-Time Fraud Detection",
@@ -117,8 +117,8 @@ export const projects = [
     approach: "Worked with the IEEE-CIS dataset of 590k transactions and 434 features, using an XGBoost and Isolation Forest ensemble with engineered transaction velocity, time-based, and amount z-score features.",
     impact: "Designed a FastAPI prediction service with Kafka stream simulation and SHAP-based explainability for fraud risk interpretation.",
     stack: ["XGBoost", "Isolation Forest", "FastAPI", "Kafka", "SHAP", "Feature Engineering"],
-    github: "#contact",
-    demo: "#contact"
+    github: "https://github.com/MansiSinhaAI/Real-Time-Fraud-Detection",
+    demo: "https://github.com/MansiSinhaAI/Real-Time-Fraud-Detection"
   },
   {
     title: "Financial Document Analyzer",
@@ -127,8 +127,8 @@ export const projects = [
     approach: "Developed a multi-agent AI system with CrewAI and FastAPI, using a sequential Verifier, Analyst, Risk Assessor, and Advisor pipeline.",
     impact: "Stabilized the system architecture by resolving LangChain, OpenAI, and ChromaDB dependency conflicts while preserving contextual information flow across tasks.",
     stack: ["CrewAI", "FastAPI", "LangChain", "OpenAI", "ChromaDB", "Multi-Agent Systems"],
-    github: "#contact",
-    demo: "#contact"
+    github: "https://github.com/MansiSinhaAI/Financial-Document-Analyzer",
+    demo: "https://github.com/MansiSinhaAI/Financial-Document-Analyzer"
   }
 ];
 
