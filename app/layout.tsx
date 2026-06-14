@@ -10,11 +10,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mansi | Data Scientist & ML Engineer",
+  title: "Mansi Sinha | Data Scientist & ML Engineer",
   description:
-    "Premium portfolio for Mansi, a Data Scientist and Machine Learning Engineer focused on business analytics, production ML, and trustworthy AI solutions.",
+    "Premium portfolio for Mansi Sinha, a Data Scientist and Machine Learning Engineer focused on AI, analytics, production ML, and business impact.",
   keywords: [
-    "Mansi",
+    "Mansi Sinha",
     "Data Scientist",
     "Machine Learning Engineer",
     "Business Analytics",
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     "Python",
     "SQL"
   ],
-  authors: [{ name: "Mansi" }],
-  creator: "Mansi",
+  authors: [{ name: "Mansi Sinha" }],
+  creator: "Mansi Sinha",
   openGraph: {
-    title: "Mansi | Data Scientist & ML Engineer",
+    title: "Mansi Sinha | Data Scientist & ML Engineer",
     description:
       "Projects, research, dashboards, and ML engineering work by Mansi.",
     type: "website",

@@ -101,73 +101,33 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Real-Time Credit Card Fraud Detection",
-    category: "Streaming ML",
-    problem: "Detect suspicious card transactions quickly while keeping false positives manageable.",
-    approach: "Combined Kafka event streams, XGBoost classification, Isolation Forest anomaly detection, FastAPI serving, and SHAP explainability.",
-    impact: "Designed a recruiter-ready architecture for fraud triage, risk scoring, and analyst explanation workflows.",
-    stack: ["Kafka", "XGBoost", "Isolation Forest", "FastAPI", "SHAP"],
-    github: "https://github.com/",
+    title: "SHE - AI Women's Health Platform",
+    category: "Founder & Developer | Ongoing",
+    problem: "Women need clearer, more personalized interpretation of blood reports and health indicators.",
+    approach: "Building OCR and NLP pipelines to extract biomarkers from lab reports, convert PDFs/images into structured health data, and power conversational health assistance through FastAPI services.",
+    impact: "Creates a secure end-to-end AI workflow for report storage, historical health tracking, personalized insight generation, and user-friendly health interpretation.",
+    stack: ["Python", "FastAPI", "OCR", "NLP", "PostgreSQL", "OpenAI API", "Git", "Next.js"],
+    github: "#contact",
     demo: "#contact"
   },
   {
-    title: "Predicting Breast Cancer Risk",
-    category: "Healthcare MLOps",
-    problem: "Estimate diagnostic risk from clinical features with reliable monitoring and alerting.",
-    approach: "Built an end-to-end MLOps pipeline with model training, evaluation, monitoring checks, and alert concepts.",
-    impact: "Showcases responsible ML practices for healthcare-style prediction and operational readiness.",
-    stack: ["Python", "Scikit-Learn", "MLflow", "Monitoring", "Alerts"],
-    github: "https://github.com/",
+    title: "Real-Time Fraud Detection",
+    category: "Imbalanced Classification",
+    problem: "Detect fraudulent transactions in a highly imbalanced dataset with only a small fraud rate.",
+    approach: "Worked with the IEEE-CIS dataset of 590k transactions and 434 features, using an XGBoost and Isolation Forest ensemble with engineered transaction velocity, time-based, and amount z-score features.",
+    impact: "Designed a FastAPI prediction service with Kafka stream simulation and SHAP-based explainability for fraud risk interpretation.",
+    stack: ["XGBoost", "Isolation Forest", "FastAPI", "Kafka", "SHAP", "Feature Engineering"],
+    github: "#contact",
     demo: "#contact"
   },
   {
-    title: "StayFit AI Wellness Companion",
-    category: "Personalization",
-    problem: "Help users receive more relevant wellness recommendations based on habits and goals.",
-    approach: "Used multiple ML models to segment users, predict preferences, and recommend personalized plans.",
-    impact: "Demonstrates customer-centric ML that blends predictive analytics with product experience.",
-    stack: ["Python", "Recommendation Systems", "Clustering", "FastAPI"],
-    github: "https://github.com/",
-    demo: "#contact"
-  },
-  {
-    title: "Event Management Designs via AI",
-    category: "Generative AI",
-    problem: "Reduce manual effort in planning event concepts, themes, layouts, and vendor ideas.",
-    approach: "Designed an AI-driven event planning workflow that turns requirements into structured creative outputs.",
-    impact: "Highlights AI-assisted productivity for service businesses and client-facing planning teams.",
-    stack: ["AI Planning", "Prompt Design", "Analytics", "Workflow Design"],
-    github: "https://github.com/",
-    demo: "#contact"
-  },
-  {
-    title: "Walmart Spending Analysis",
-    category: "Retail Analytics",
-    problem: "Understand customer spending behavior and identify actionable retail performance patterns.",
-    approach: "Explored transaction data, segmented spend trends, and built visual summaries for decision support.",
-    impact: "Turns raw retail data into clear opportunities around inventory, promotion, and customer targeting.",
-    stack: ["Python", "SQL", "Power BI", "EDA"],
-    github: "https://github.com/",
-    demo: "#contact"
-  },
-  {
-    title: "Netflix Content Analytics",
-    category: "Media Analytics",
-    problem: "Analyze content catalog patterns across genres, release years, countries, and formats.",
-    approach: "Cleaned catalog data, built exploratory visuals, and surfaced content strategy observations.",
-    impact: "Shows analytics storytelling for media strategy and audience understanding.",
-    stack: ["Python", "Tableau", "Pandas", "Visualization"],
-    github: "https://github.com/",
-    demo: "#contact"
-  },
-  {
-    title: "Target Brazil Market SQL Analysis",
-    category: "SQL Case Study",
-    problem: "Answer market, logistics, payment, and customer behavior questions from relational data.",
-    approach: "Wrote analytical SQL queries across orders, customers, sellers, payments, and geographies.",
-    impact: "Demonstrates strong SQL reasoning for business intelligence and marketplace operations.",
-    stack: ["SQL", "PostgreSQL", "Business Analytics", "Data Modeling"],
-    github: "https://github.com/",
+    title: "Financial Document Analyzer",
+    category: "Multi-Agent AI",
+    problem: "Financial documents require structured analysis, risk assessment, and investment recommendation workflows.",
+    approach: "Developed a multi-agent AI system with CrewAI and FastAPI, using a sequential Verifier, Analyst, Risk Assessor, and Advisor pipeline.",
+    impact: "Stabilized the system architecture by resolving LangChain, OpenAI, and ChromaDB dependency conflicts while preserving contextual information flow across tasks.",
+    stack: ["CrewAI", "FastAPI", "LangChain", "OpenAI", "ChromaDB", "Multi-Agent Systems"],
+    github: "#contact",
     demo: "#contact"
   }
 ];

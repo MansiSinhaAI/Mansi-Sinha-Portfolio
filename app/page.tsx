@@ -17,6 +17,8 @@ import {
   Linkedin,
   Mail,
   Menu,
+  MapPin,
+  Phone,
   Rocket,
   Send,
   Sparkles,
@@ -122,9 +124,9 @@ function Navbar() {
       <nav className="section-shell glass flex h-16 items-center justify-between rounded-full px-4">
         <a href="#home" className="focus-ring flex items-center gap-2 rounded-full text-sm font-semibold">
           <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-lavender-200 to-mint-200 text-ink-900">
-            M
+            MS
           </span>
-          <span className="hidden sm:inline">Mansi</span>
+          <span className="hidden sm:inline">Mansi Sinha</span>
         </a>
 
         <div className="hidden items-center gap-1 lg:flex">
@@ -233,7 +235,7 @@ function Hero() {
             Data science portfolio built for business impact
           </motion.div>
           <motion.h1 variants={fadeUp} className="max-w-4xl text-5xl font-semibold tracking-normal text-ink-900 sm:text-6xl lg:text-7xl">
-            Mansi
+            Mansi Sinha
           </motion.h1>
           <motion.p variants={fadeUp} className="mt-5 max-w-3xl text-xl font-semibold leading-relaxed text-ink-700 sm:text-2xl">
             Data Scientist | Machine Learning Engineer | Business Analytics Enthusiast
@@ -268,7 +270,7 @@ function Hero() {
                   <div className="mx-auto grid h-28 w-28 place-items-center rounded-full bg-white shadow-card">
                     <UserRound size={54} className="text-lavender-400" />
                   </div>
-                  <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-ink-500">Professional Photo</p>
+              <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-ink-500">Professional Photo</p>
                   <p className="mt-2 text-sm leading-6 text-ink-500">Replace this placeholder with a high-quality headshot in the same frame.</p>
                 </div>
               </div>
@@ -605,14 +607,20 @@ function Contact() {
         <div>
           <SectionHeader eyebrow="Contact" title="Let's connect about data science, ML, or analytics roles." />
           <div className="mt-8 grid gap-3">
-            <a href="https://www.linkedin.com/" className="focus-ring flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm transition hover:-translate-y-0.5">
+            <div className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm">
+              <MapPin size={18} className="text-lavender-400" /> Delhi, India
+            </div>
+            <a href="tel:+919354203506" className="focus-ring flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm transition hover:-translate-y-0.5">
+              <Phone size={18} className="text-skyglass-400" /> +91 93542 03506
+            </a>
+            <a href="https://www.linkedin.com/in/sinhamansi/" target="_blank" rel="noreferrer" className="focus-ring flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm transition hover:-translate-y-0.5">
               <Linkedin size={18} className="text-skyglass-400" /> LinkedIn
             </a>
-            <a href="https://github.com/" className="focus-ring flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm transition hover:-translate-y-0.5">
+            <a href="https://github.com/MansiSinhaAI" target="_blank" rel="noreferrer" className="focus-ring flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm transition hover:-translate-y-0.5">
               <Github size={18} className="text-ink-700" /> GitHub
             </a>
-            <a href="mailto:mansi@example.com" className="focus-ring flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm transition hover:-translate-y-0.5">
-              <Mail size={18} className="text-mint-400" /> mansi@example.com
+            <a href="mailto:mansi15aug@gmail.com" className="focus-ring flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-ink-700 shadow-sm transition hover:-translate-y-0.5">
+              <Mail size={18} className="text-mint-400" /> mansi15aug@gmail.com
             </a>
           </div>
         </div>
@@ -672,7 +680,7 @@ function Footer() {
     <footer className="border-t border-skyglass-100 bg-white py-10">
       <div className="section-shell flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="text-lg font-semibold text-ink-900">Mansi</p>
+          <p className="text-lg font-semibold text-ink-900">Mansi Sinha</p>
           <p className="mt-1 text-sm text-ink-500">Data Scientist | Machine Learning Engineer</p>
         </div>
         <div className="flex flex-wrap gap-3">
@@ -683,8 +691,12 @@ function Footer() {
           ))}
         </div>
         <div className="flex gap-2">
-          {[Github, Linkedin, Mail].map((Icon, index) => (
-            <a key={index} href={index === 2 ? "mailto:mansi@example.com" : "#contact"} className="focus-ring grid h-10 w-10 place-items-center rounded-full bg-skyglass-50 text-ink-700 transition hover:-translate-y-0.5 hover:bg-lavender-100" aria-label="Social link">
+          {[
+            { Icon: Github, href: "https://github.com/MansiSinhaAI", label: "GitHub" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/sinhamansi/", label: "LinkedIn" },
+            { Icon: Mail, href: "mailto:mansi15aug@gmail.com", label: "Email" }
+          ].map(({ Icon, href, label }) => (
+            <a key={label} href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined} className="focus-ring grid h-10 w-10 place-items-center rounded-full bg-skyglass-50 text-ink-700 transition hover:-translate-y-0.5 hover:bg-lavender-100" aria-label={label}>
               <Icon size={18} />
             </a>
           ))}
@@ -717,7 +729,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-      <div className="sr-only">Copyright {year} Mansi.</div>
+      <div className="sr-only">Copyright {year} Mansi Sinha.</div>
     </>
   );
 }
